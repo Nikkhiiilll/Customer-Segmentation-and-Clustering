@@ -12,7 +12,6 @@ warnings.filterwarnings('ignore')
 # --- Page Configuration ---
 st.set_page_config(
     page_title="Customer Segmentation App",
-    page_icon="🛍️",
     layout="wide"
 )
 
@@ -62,7 +61,7 @@ def plot_bivariate_clusters(df, x_col, y_col, cluster_col, centers):
 
 # --- Main Application Logic ---
 def main():
-    st.title("🛍️ Customer Segmentation and Clustering")
+    st.title("Customer Segmentation and Clustering")
     st.markdown("An interactive web app to analyze and cluster customer data.")
 
     # --- Sidebar for Navigation ---
@@ -224,4 +223,5 @@ def main():
 
 
 if __name__ == '__main__':
+
     main()
